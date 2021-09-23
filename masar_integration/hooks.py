@@ -89,6 +89,13 @@ app_license = "KCSC\'s Licenses"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+ 	"Customer": {
+		"on_update": "masar_integration.www.repzo_api.ConnectToRepzo"
+	}
+ }
+
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
@@ -172,4 +179,3 @@ user_data_fields = [
 # auth_hooks = [
 # 	"masar_integration.auth.validate"
 # ]
-
